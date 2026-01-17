@@ -31,7 +31,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/military_assets");
     ];
 
     await User.insertMany(users);
-    console.log("✅ Users Seeded Successfully");
+    console.log("Users Seeded Successfully");
     process.exit();
   } catch (err) {
     console.log(err);
