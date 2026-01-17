@@ -59,7 +59,7 @@ export default function Dashboard() {
     const token = localStorage.getItem("token");
     if (!token) return nav("/");
     try {
-      const res = await axios.get(`http://localhost:5000/api/dashboard?t=${Date.now()}`, {
+      const res = await axios.get(`https://military-assets-1.onrender.com/api/dashboard?t=${Date.now()}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setData({

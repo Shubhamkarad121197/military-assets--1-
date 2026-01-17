@@ -15,7 +15,7 @@ export default function Purchases() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/purchases",
+        "https://military-assets-1.onrender.com/api/purchases",
         {
           base: "Base A",
           equipment,
